@@ -1,3 +1,5 @@
+package console;
+
 /**
  * A console for playing the BossFight system
  */
