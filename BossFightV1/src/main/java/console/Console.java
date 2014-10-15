@@ -8,12 +8,12 @@ public interface Console {
     /**
      * to begin playing the game
      */
-    void startUpConsole();
+    void startConsole();
 
     /**
      * close down the console
      */
-    void closeDownConsole();
+    void closeConsole();
 
     /**
      * reset the console completely
@@ -24,5 +24,15 @@ public interface Console {
      * set the manager for persistence
      */
     void setDataManager();
+
+    /**
+     * set the console View
+     */
+    void setView();
+
+    /**
+     * set the console game
+     */
+    void setGame();
 
 }
