@@ -1,12 +1,10 @@
 package models;
 
-public interface Agent {
+public interface Item {
 
-    int getHealth();
+    void setDescription(String description);
 
-    void setMaxHealth(int health);
-
-    int getMaxHealth();
+    String getDescription();
 
     void setDefence(int defence);
 
@@ -15,5 +13,6 @@ public interface Agent {
     void setAttack(int attack);
 
     int getAttack();
+
 
 }
