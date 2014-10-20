@@ -4,15 +4,15 @@ public interface Agent {
 
     double getHealth();
 
-    double setMaxHealth();
+    void setMaxHealth();
 
     double getMaxHealth();
 
+    void setDefence();
+
     double getDefence();
 
-    double setDefence();
-
-    double setAttack();
+    void setAttack();
 
     double getAttack();
 
