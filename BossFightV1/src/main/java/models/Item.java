@@ -13,6 +13,4 @@ public interface Item {
     void setAttack(int attack);
 
     int getAttack();
-
-
 }

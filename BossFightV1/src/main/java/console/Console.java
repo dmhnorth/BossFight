@@ -15,5 +15,4 @@ public interface Console {
 
     void setView();
 
-    void setGame();
 }
