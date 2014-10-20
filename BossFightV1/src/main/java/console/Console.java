@@ -13,6 +13,4 @@ public interface Console {
 
     void setPersistentDataManager();
 
-    void setView();
-
 }

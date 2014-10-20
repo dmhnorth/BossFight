@@ -31,9 +31,4 @@ public class TextConsole implements Console {
     public void setPersistentDataManager() {
 //        dataManager = new DataManager();
     }
-
-    @Override
-    public void setView() {
-
-    }
 }
