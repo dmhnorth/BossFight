@@ -1,4 +1,4 @@
-package console;
+package console.textAdventure;
 
 /**
  * English language - Text adventure format.
@@ -14,6 +14,6 @@ public class TextAdventureView {
     }
 
     public void shutdown() {
-        System.out.println("System has been shutdown.");
+        System.out.println("The system will attempt to save and shutdown.");
     }
 }

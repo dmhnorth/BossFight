@@ -1,10 +1,12 @@
-package console;
+package console.textAdventure;
 
-public class TextConsole implements Console {
+import console.Console;
+import console.DataManager;
 
-    TextAdventureView view = new TextAdventureView();
-    private DataManager dataManager;
+public class TextAdventureConsole implements Console {
 
+    private TextAdventureView view = new TextAdventureView();
+    private DataManager dataManager = new TextAdventureDataManager();
 
     @Override
     public void startConsole() {
@@ -17,18 +19,13 @@ public class TextConsole implements Console {
 
     @Override
     public void ShutdownConsole() {
-        dataManager.save();
         view.shutdown();
+        dataManager.save();
     }
 
     @Override
     public void resetConsole() {
         view.reset();
-        view = new TextAdventureView();
-    }
 
-    @Override
-    public void setPersistentDataManager() {
-//        dataManager = new DataManager();
     }
 }

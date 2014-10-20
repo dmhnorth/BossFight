@@ -11,6 +11,4 @@ public interface Console {
 
     void resetConsole();
 
-    void setPersistentDataManager();
-
 }
