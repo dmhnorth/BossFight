@@ -6,7 +6,7 @@ package console.textAdventure;
 public class TextAdventureView {
 
     void displayWelcomeMessage() {
-        System.out.println("Hello, welcome to the game.");
+        System.out.println("Hello, welcome to the launchers.");
     }
 
     public void reset() {

@@ -1,9 +1,9 @@
-package game;
+package launchers;
 
 import console.Console;
 import console.textAdventure.TextAdventureConsole;
 
-public class Launcher {
+public class TextAdventureLauncher {
 
 
     public static void main(String[] args) {
