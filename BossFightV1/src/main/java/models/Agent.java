@@ -2,6 +2,8 @@ package models;
 
 public interface Agent {
 
+    boolean isNPC();
+
     int getHealth();
 
     void setMaxHealth(int health);
