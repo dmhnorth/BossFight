@@ -22,7 +22,7 @@ public class TextAdventureConsole implements Console {
 
         view.introduction();
         agentManager = new AgentManager();
-        agentManager.setUserAgent(new Agent(scanner.next()));
+        agentManager.setAgentPlayer1(new Agent(scanner.next()));
 
 
         //TODO make the rest of the text adventure version here
