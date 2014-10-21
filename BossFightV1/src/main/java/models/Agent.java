@@ -6,8 +6,8 @@ public class Agent {
 
 
     private String name;
-    private int health;
-    private int maxHealth;
+    private int currentHP;
+    private int maxHP;
     private int defence;
     private int attack;
     private boolean isNPC;
@@ -15,19 +15,15 @@ public class Agent {
     public Agent(String name, GameRulebook gameRulebook) {
         setName(name);
 
-        setMaxHealth(gameRulebook.getInitialPlayerMaxHealth());
+        setMaxHP(gameRulebook.getInitialPlayerMaxHealth());
         setAttack(gameRulebook.getInitialPlayerAttack());
         setDefence(gameRulebook.getInitialPlayerDefence());
 
-        restoreHealth();
+        restoreHP();
     }
 
-    private void restoreHealth() {
-        health = maxHealth;
-    }
-
-    public void setNPC(boolean isNPC) {
-        this.isNPC = isNPC;
+    private void restoreHP() {
+        currentHP = maxHP;
     }
 
     public void setName(String name) {
@@ -38,16 +34,16 @@ public class Agent {
         return name;
     }
 
-    int getHealth() {
-        return health;
+    int getCurrentHP() {
+        return currentHP;
     }
 
-    void setMaxHealth(int maxHealth) {
-        this.maxHealth = maxHealth;
+    void setMaxHP(int maxHealth) {
+        this.maxHP = maxHealth;
     }
 
-    int getMaxHealth() {
-        return maxHealth;
+    int getMaxHP() {
+        return maxHP;
     }
 
     void setDefence(int defence) {
@@ -68,6 +64,6 @@ public class Agent {
 
     @Override
     public String toString() {
-        return "Name: " + getName() + " Health:" + getHealth() + "/" + getMaxHealth() + " A:" + getAttack() + " D:" + getDefence();
+        return "Name: " + getName() + " HP:" + getCurrentHP() + "/" + getMaxHP() + " A:" + getAttack() + " D:" + getDefence();
     }
 }
