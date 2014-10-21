@@ -25,7 +25,7 @@ public class TextAdventureBossFight implements BossFight {
         setAgentManager(new AgentManager());
         setGameRulebook(new BasicRulebook());
 
-        agentManager.setAgentPlayer1(new Agent(scanner.next(), false, gameRulebook));
+        agentManager.setAgentPlayer1(new Agent(scanner.next(), gameRulebook));
 
         System.out.println(agentManager.getAgentPlayer1().toString());
 

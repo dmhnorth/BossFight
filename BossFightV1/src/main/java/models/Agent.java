@@ -12,18 +12,18 @@ public class Agent {
     private int attack;
     private boolean isNPC;
 
-    public Agent(String name, boolean isNPC, GameRulebook gameRulebook) {
+    public Agent(String name, GameRulebook gameRulebook) {
         setName(name);
-        setNPC(isNPC);
 
         setMaxHealth(gameRulebook.getInitialPlayerMaxHealth());
         setAttack(gameRulebook.getInitialPlayerAttack());
         setDefence(gameRulebook.getInitialPlayerDefence());
+
+        restoreHealth();
     }
 
-    //NPC = non-playable character
-    boolean isNPC() {
-        return isNPC;
+    private void restoreHealth() {
+        health = maxHealth;
     }
 
     public void setNPC(boolean isNPC) {
@@ -42,8 +42,8 @@ public class Agent {
         return health;
     }
 
-    void setMaxHealth(int health) {
-        this.health = health;
+    void setMaxHealth(int maxHealth) {
+        this.maxHealth = maxHealth;
     }
 
     int getMaxHealth() {
@@ -68,7 +68,6 @@ public class Agent {
 
     @Override
     public String toString() {
-        String space = " :: ";
-        return getName() + space + isNPC() + space + getMaxHealth() + space + getAttack() + space + getDefence();
+        return "Name: " + getName() + " Health:" + getHealth() + "/" + getMaxHealth() + " A:" + getAttack() + " D:" + getDefence();
     }
 }
