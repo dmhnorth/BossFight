@@ -38,8 +38,13 @@ public class Agent {
         return currentHP;
     }
 
-    void setMaxHP(int maxHealth) {
-        this.maxHP = maxHealth;
+    void setMaxHP(int maxHP) {
+        if(maxHP > currentHP) {
+            this.maxHP = maxHP;
+            restoreHP();
+        } else {
+            currentHP = maxHP;
+        }
     }
 
     int getMaxHP() {

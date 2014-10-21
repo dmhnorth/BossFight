@@ -71,4 +71,10 @@ public class AgentTest {
         //Visual test only
         System.out.println(agent.toString());
     }
+
+    @Test
+    public void testCurrentHPDoesNotExceedMaxHP(){
+        agent.setMaxHP(10);
+        assertTrue(agent.getCurrentHP() < agent.getMaxHP());
+    }
 }
