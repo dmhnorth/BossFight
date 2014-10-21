@@ -2,42 +2,25 @@ package models;
 
 public class Agent {
 
-    private String name;
 
-    public Agent(String name) {
+    private String name;
+    private int health;
+    private int maxHealth;
+    private int defence;
+    private int attack;
+    private boolean isNPC;
+
+    public Agent(String name, boolean isNPC) {
         setName(name);
+        setNPC(isNPC);
     }
 
     boolean isNPC() {
-        return false;
+        return isNPC;
     }
 
-    int getHealth() {
-        return 0;
-    }
-
-    void setMaxHealth(int health) {
-
-    }
-
-    int getMaxHealth() {
-        return 0;
-    }
-
-    void setDefence(int defence) {
-
-    }
-
-    int getDefence() {
-        return 0;
-    }
-
-    void setAttack(int attack) {
-
-    }
-
-    int getAttack() {
-        return 0;
+    public void setNPC(boolean isNPC) {
+        this.isNPC = isNPC;
     }
 
     public void setName(String name) {
@@ -46,5 +29,33 @@ public class Agent {
 
     public String getName() {
         return name;
+    }
+
+    int getHealth() {
+        return health;
+    }
+
+    void setMaxHealth(int health) {
+        this.health = health;
+    }
+
+    int getMaxHealth() {
+        return maxHealth;
+    }
+
+    void setDefence(int defence) {
+        this.defence = defence;
+    }
+
+    int getDefence() {
+        return defence;
+    }
+
+    void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    int getAttack() {
+        return attack;
     }
 }

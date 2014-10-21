@@ -6,7 +6,6 @@ package models;
 public class AgentManager {
 
     private Agent agentPlayer1;
-
     private Agent[] agents;
 
 
