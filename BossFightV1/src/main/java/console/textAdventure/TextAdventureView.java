@@ -5,7 +5,7 @@ package console.textAdventure;
  */
 public class TextAdventureView {
 
-    void displayWelcomeMessage() {
+    void welcomeMessage() {
         System.out.println("Hello, welcome to the launchers.");
     }
 
@@ -15,5 +15,9 @@ public class TextAdventureView {
 
     public void shutdown() {
         System.out.println("The system will attempt to save and shutdown.");
+    }
+
+    public void introduction() {
+        System.out.println("Welcome to the game, please give a player name: ");
     }
 }

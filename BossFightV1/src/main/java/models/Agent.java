@@ -1,21 +1,50 @@
 package models;
 
-public interface Agent {
+public class Agent {
 
-    boolean isNPC();
+    private String name;
 
-    int getHealth();
+    public Agent(String name) {
+        setName(name);
+    }
 
-    void setMaxHealth(int health);
+    boolean isNPC() {
+        return false;
+    }
 
-    int getMaxHealth();
+    int getHealth() {
+        return 0;
+    }
 
-    void setDefence(int defence);
+    void setMaxHealth(int health) {
 
-    int getDefence();
+    }
 
-    void setAttack(int attack);
+    int getMaxHealth() {
+        return 0;
+    }
 
-    int getAttack();
+    void setDefence(int defence) {
 
+    }
+
+    int getDefence() {
+        return 0;
+    }
+
+    void setAttack(int attack) {
+
+    }
+
+    int getAttack() {
+        return 0;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
