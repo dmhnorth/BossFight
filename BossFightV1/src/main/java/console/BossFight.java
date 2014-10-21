@@ -4,11 +4,11 @@ import models.AgentManager;
 import rulebooks.GameRulebook;
 
 /**
- * A console for playing the BossFight system
+ * A console for playing a BossFight.
  */
-public interface Console {
+public interface BossFight {
 
-    void startConsole();
+    void startBossFight();
 
     void setGameRulebook(GameRulebook gameRulebook);
 

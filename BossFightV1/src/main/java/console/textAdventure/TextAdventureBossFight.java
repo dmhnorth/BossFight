@@ -1,6 +1,6 @@
 package console.textAdventure;
 
-import console.Console;
+import console.BossFight;
 import models.Agent;
 import models.AgentManager;
 import rulebooks.BasicRulebook;
@@ -8,7 +8,7 @@ import rulebooks.GameRulebook;
 
 import java.util.Scanner;
 
-public class TextAdventureConsole implements Console {
+public class TextAdventureBossFight implements BossFight {
 
     private TextAdventureView view = new TextAdventureView();
     private Scanner scanner = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class TextAdventureConsole implements Console {
 
 
     @Override
-    public void startConsole() {
+    public void startBossFight() {
         view.welcomeMessage();
 
         view.introduction();

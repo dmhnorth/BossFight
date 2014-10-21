@@ -1,14 +1,14 @@
 package launchers;
 
-import console.Console;
-import console.textAdventure.TextAdventureConsole;
+import console.BossFight;
+import console.textAdventure.TextAdventureBossFight;
 
 public class TextAdventureLauncher {
 
 
     public static void main(String[] args) {
-        Console console = new TextAdventureConsole();
-        console.startConsole();
+        BossFight bossFight = new TextAdventureBossFight();
+        bossFight.startBossFight();
     }
 
 }

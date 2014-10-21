@@ -10,14 +10,14 @@ public class TextAdventureView {
     }
 
     public void reset() {
-        System.err.println("Console has been reset.");
+        System.err.println("BossFight has been reset.");
     }
 
     public void shutdown() {
-        System.out.println("The system will attempt to save and shutdown.");
+        System.out.println("The BossFight will attempt to save and shutdown.");
     }
 
     public void introduction() {
-        System.out.println("Welcome to the game, please give a player name: ");
+        System.out.println("Welcome to a BossFight, please give your player a name: ");
     }
 }
