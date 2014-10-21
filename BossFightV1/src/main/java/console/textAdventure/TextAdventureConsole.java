@@ -1,28 +1,33 @@
 package console.textAdventure;
 
 import console.Console;
-import console.DataManager;
 import models.Agent;
 import models.AgentManager;
+import rulebooks.BasicRulebook;
+import rulebooks.GameRulebook;
 
 import java.util.Scanner;
 
 public class TextAdventureConsole implements Console {
 
     private TextAdventureView view = new TextAdventureView();
-    private DataManager dataManager = new TextAdventureDataManager();
     private Scanner scanner = new Scanner(System.in);
     private AgentManager agentManager;
+    private GameRulebook gameRulebook;
 
 
     @Override
     public void startConsole() {
         view.welcomeMessage();
-        dataManager.load();
 
         view.introduction();
-        agentManager = new AgentManager();
-        agentManager.setAgentPlayer1(new Agent(scanner.next()));
+
+        setAgentManager(new AgentManager());
+        setGameRulebook(new BasicRulebook());
+
+        agentManager.setAgentPlayer1(new Agent(scanner.next(), true, gameRulebook));
+
+        System.out.println(agentManager.getAgentPlayer1().toString());
 
 
         //TODO make the rest of the text adventure version here
@@ -30,14 +35,23 @@ public class TextAdventureConsole implements Console {
     }
 
     @Override
+    public void setGameRulebook(GameRulebook gameRulebook) {
+        this.gameRulebook = gameRulebook;
+    }
+
+    @Override
     public void ShutdownConsole() {
         view.shutdown();
-        dataManager.save();
     }
 
     @Override
     public void resetConsole() {
         view.reset();
 
+    }
+
+    @Override
+    public void setAgentManager(AgentManager agentManager) {
+        this.agentManager = agentManager;
     }
 }

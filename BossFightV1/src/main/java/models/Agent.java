@@ -1,5 +1,7 @@
 package models;
 
+import rulebooks.GameRulebook;
+
 public class Agent {
 
 
@@ -10,11 +12,16 @@ public class Agent {
     private int attack;
     private boolean isNPC;
 
-    public Agent(String name, boolean isNPC) {
+    public Agent(String name, boolean isNPC, GameRulebook gameRulebook) {
         setName(name);
         setNPC(isNPC);
+
+        setMaxHealth(gameRulebook.getInitialPlayerMaxHealth());
+        setAttack(gameRulebook.getInitialPlayerAttack());
+        setDefence(gameRulebook.getInitialPlayerDefence());
     }
 
+    //NPC = non-playable character
     boolean isNPC() {
         return isNPC;
     }
@@ -57,5 +64,11 @@ public class Agent {
 
     int getAttack() {
         return attack;
+    }
+
+    @Override
+    public String toString() {
+        String space = " :: ";
+        return getName() + space + getMaxHealth() + space + getAttack() + space + getDefence();
     }
 }
