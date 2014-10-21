@@ -12,9 +12,5 @@ public interface BossFight {
 
     void setGameRulebook(GameRulebook gameRulebook);
 
-    void ShutdownConsole();
-
-    void resetConsole();
-
     void setAgentManager(AgentManager agentManager);
 }

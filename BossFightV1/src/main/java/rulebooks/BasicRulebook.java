@@ -1,8 +1,5 @@
 package rulebooks;
 
-/**
- * Created by David on 21/10/2014.
- */
 public class BasicRulebook implements GameRulebook {
     private int initialPlayerMaxHealth;
     private int initialPlayerAttack;
@@ -14,7 +11,7 @@ public class BasicRulebook implements GameRulebook {
 
     @Override
     public void setRules() {
-        initialPlayerMaxHealth = 100;
+        initialPlayerMaxHealth = 50;
         initialPlayerAttack = 10;
         initialPlayerDefence = 5;
     }

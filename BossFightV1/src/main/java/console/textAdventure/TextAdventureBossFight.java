@@ -25,7 +25,7 @@ public class TextAdventureBossFight implements BossFight {
         setAgentManager(new AgentManager());
         setGameRulebook(new BasicRulebook());
 
-        agentManager.setAgentPlayer1(new Agent(scanner.next(), true, gameRulebook));
+        agentManager.setAgentPlayer1(new Agent(scanner.next(), false, gameRulebook));
 
         System.out.println(agentManager.getAgentPlayer1().toString());
 
@@ -37,17 +37,6 @@ public class TextAdventureBossFight implements BossFight {
     @Override
     public void setGameRulebook(GameRulebook gameRulebook) {
         this.gameRulebook = gameRulebook;
-    }
-
-    @Override
-    public void ShutdownConsole() {
-        view.shutdown();
-    }
-
-    @Override
-    public void resetConsole() {
-        view.reset();
-
     }
 
     @Override

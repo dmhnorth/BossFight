@@ -69,6 +69,6 @@ public class Agent {
     @Override
     public String toString() {
         String space = " :: ";
-        return getName() + space + getMaxHealth() + space + getAttack() + space + getDefence();
+        return getName() + space + isNPC() + space + getMaxHealth() + space + getAttack() + space + getDefence();
     }
 }
