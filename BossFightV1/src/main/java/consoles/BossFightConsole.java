@@ -1,12 +1,12 @@
-package console;
+package consoles;
 
 import models.AgentManager;
 import rulebooks.GameRulebook;
 
 /**
- * A console for playing a BossFight.
+ * A console for playing a BossFightConsole.
  */
-public interface BossFight {
+public interface BossFightConsole {
 
     void startBossFight();
 
