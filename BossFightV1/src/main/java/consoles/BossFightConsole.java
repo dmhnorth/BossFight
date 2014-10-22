@@ -4,7 +4,7 @@ import models.AgentManager;
 import rulebooks.GameRulebook;
 
 /**
- * A console for playing a BossFightConsole.
+ * AgentTypes console for playing a BossFightConsole.
  */
 public interface BossFightConsole {
 
