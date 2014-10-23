@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import rulebooks.BasicRulebook;
-import rulebooks.GameRulebook;
+import rulebooks.Rulebook;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -12,12 +12,12 @@ import static org.junit.Assert.assertTrue;
 public class AgentTest {
     Agent agent;
     String name;
-    GameRulebook gameRulebook;
+    Rulebook rulebook;
 
     @Before
     public void setUp() throws Exception {
         name = "Dave";
-        gameRulebook = new BasicRulebook();
+        rulebook = new BasicRulebook();
         agent = new Agent(name);
     }
 
@@ -25,7 +25,7 @@ public class AgentTest {
     public void tearDown() throws Exception {
         name = null;
         agent = null;
-        gameRulebook = null;
+        rulebook = null;
     }
 
     @Test

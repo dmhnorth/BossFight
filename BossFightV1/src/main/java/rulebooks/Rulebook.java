@@ -1,6 +1,6 @@
 package rulebooks;
 
-public interface GameRulebook {
+public interface Rulebook {
 
     /**
      * Set the rules to construct the game in here.

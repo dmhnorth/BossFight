@@ -1,6 +1,6 @@
 package rulebooks;
 
-public class BasicRulebook implements GameRulebook {
+public class BasicRulebook implements Rulebook {
     private int initialPlayerMaxHealth;
     private int initialPlayerAttack;
     private int initialPlayerDefence;

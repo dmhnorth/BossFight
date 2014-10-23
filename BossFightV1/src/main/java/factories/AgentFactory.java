@@ -1,22 +1,22 @@
 package factories;
 
 import models.Agent;
-import rulebooks.GameRulebook;
+import rulebooks.Rulebook;
 
 public class AgentFactory {
 
-    private GameRulebook gameRulebook;
+    private Rulebook rulebook;
 
-    public AgentFactory(GameRulebook gameRulebook){
-        this.gameRulebook = gameRulebook;
+    public AgentFactory(Rulebook rulebook){
+        this.rulebook = rulebook;
     }
 
     public Agent getAgent(String name) {
         Agent agent = new Agent(name);
 
-        agent.setMaxHP(gameRulebook.getInitialPlayerMaxHealth());
-        agent.setAttack(gameRulebook.getInitialPlayerAttack());
-        agent.setDefence(gameRulebook.getInitialPlayerDefence());
+        agent.setMaxHP(rulebook.getInitialPlayerMaxHealth());
+        agent.setAttack(rulebook.getInitialPlayerAttack());
+        agent.setDefence(rulebook.getInitialPlayerDefence());
 
         agent.restoreHP();
 

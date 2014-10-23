@@ -1,7 +1,7 @@
 package consoles;
 
-import models.AgentManager;
-import rulebooks.GameRulebook;
+import models.AgentController;
+import rulebooks.Rulebook;
 
 /**
  * AgentTypes console for playing a BossFightConsole.
@@ -10,7 +10,7 @@ public interface BossFightConsole {
 
     void startBossFight();
 
-    void setGameRulebook(GameRulebook gameRulebook);
+    void setRulebook(Rulebook rulebook);
 
-    void setAgentManager(AgentManager agentManager);
+    void setAgentController(AgentController agentController);
 }

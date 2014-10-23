@@ -1,6 +1,6 @@
 package models;
 
-public class AgentManager {
+public class AgentController {
 
     private Agent agentPlayer1;
 
