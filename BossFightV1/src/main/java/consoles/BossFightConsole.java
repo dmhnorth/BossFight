@@ -1,6 +1,6 @@
 package consoles;
 
-import models.AgentController;
+import models.AgentManager;
 import rulebooks.Rulebook;
 
 /**
@@ -12,5 +12,5 @@ public interface BossFightConsole {
 
     void setRulebook(Rulebook rulebook);
 
-    void setAgentController(AgentController agentController);
+    void setAgentManager(AgentManager agentManager);
 }

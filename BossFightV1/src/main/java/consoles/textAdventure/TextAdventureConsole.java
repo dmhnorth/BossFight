@@ -3,7 +3,7 @@ package consoles.textAdventure;
 import consoles.BossFightConsole;
 import consoles.BossFightView;
 import factories.AgentFactory;
-import models.AgentController;
+import models.AgentManager;
 import rulebooks.BasicRulebook;
 import rulebooks.Rulebook;
 
@@ -13,7 +13,7 @@ public class TextAdventureConsole implements BossFightConsole {
 
     private BossFightView view = new TextAdventureView();
     private Scanner scanner = new Scanner(System.in);
-    private AgentController agentController;
+    private AgentManager agentManager;
     private Rulebook rulebook;
     private AgentFactory agentFactory;
 
@@ -23,14 +23,14 @@ public class TextAdventureConsole implements BossFightConsole {
         view.welcomeMessage();
         view.introduction();
 
-        setAgentController(new AgentController());
+        setAgentManager(new AgentManager());
         setRulebook(new BasicRulebook());
         agentFactory = new AgentFactory(rulebook);
 
 
-        agentController.setAgentPlayer1(agentFactory.getAgent(scanner.next()));
+        agentManager.setAgentPlayer1(agentFactory.getAgent(scanner.next()));
 
-        System.out.println(agentController.getAgentPlayer1().toString());
+        System.out.println(agentManager.getAgentPlayer1().toString());
 
 
         //TODO make the rest of the text adventure version here
@@ -43,7 +43,7 @@ public class TextAdventureConsole implements BossFightConsole {
     }
 
     @Override
-    public void setAgentController(AgentController agentController) {
-        this.agentController = agentController;
+    public void setAgentManager(AgentManager agentManager) {
+        this.agentManager = agentManager;
     }
 }
