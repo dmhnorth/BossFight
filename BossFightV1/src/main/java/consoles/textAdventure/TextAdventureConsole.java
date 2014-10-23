@@ -2,7 +2,7 @@ package consoles.textAdventure;
 
 import consoles.BossFightConsole;
 import consoles.BossFightView;
-import models.Agent;
+import factories.AgentFactory;
 import models.AgentController;
 import rulebooks.BasicRulebook;
 import rulebooks.Rulebook;
@@ -15,6 +15,7 @@ public class TextAdventureConsole implements BossFightConsole {
     private Scanner scanner = new Scanner(System.in);
     private AgentController agentController;
     private Rulebook rulebook;
+    private AgentFactory agentFactory;
 
 
     @Override
@@ -24,8 +25,10 @@ public class TextAdventureConsole implements BossFightConsole {
 
         setAgentController(new AgentController());
         setRulebook(new BasicRulebook());
+        agentFactory = new AgentFactory(rulebook);
 
-        agentController.setAgentPlayer1(new Agent(scanner.next()));
+
+        agentController.setAgentPlayer1(agentFactory.getAgent(scanner.next()));
 
         System.out.println(agentController.getAgentPlayer1().toString());
 
