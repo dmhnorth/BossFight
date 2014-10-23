@@ -1,7 +1,5 @@
 package models;
 
-import rulebooks.GameRulebook;
-
 public class Agent {
 
     private String name;
@@ -10,17 +8,11 @@ public class Agent {
     private int defence;
     private int attack;
 
-    public Agent(String name, GameRulebook gameRulebook) {
+    public Agent(String name) {
         setName(name);
-
-        setMaxHP(gameRulebook.getInitialPlayerMaxHealth());
-        setAttack(gameRulebook.getInitialPlayerAttack());
-        setDefence(gameRulebook.getInitialPlayerDefence());
-
-        restoreHP();
     }
 
-    private void restoreHP() {
+    public void restoreHP() {
         currentHP = maxHP;
     }
 
@@ -36,7 +28,7 @@ public class Agent {
         return currentHP;
     }
 
-    void setMaxHP(int maxHP) {
+    public void setMaxHP(int maxHP) {
         if(maxHP > currentHP) {
             this.maxHP = maxHP;
             restoreHP();
@@ -49,7 +41,7 @@ public class Agent {
         return maxHP;
     }
 
-    void setDefence(int defence) {
+    public void setDefence(int defence) {
         this.defence = defence;
     }
 
@@ -57,7 +49,7 @@ public class Agent {
         return defence;
     }
 
-    void setAttack(int attack) {
+    public void setAttack(int attack) {
         this.attack = attack;
     }
 

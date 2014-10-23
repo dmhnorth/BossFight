@@ -5,9 +5,9 @@ import org.junit.Before;
 import org.junit.Test;
 import rulebooks.BasicRulebook;
 import rulebooks.GameRulebook;
-import sun.management.resources.agent;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class AgentTest {
     Agent agent;
@@ -18,7 +18,7 @@ public class AgentTest {
     public void setUp() throws Exception {
         name = "Dave";
         gameRulebook = new BasicRulebook();
-        agent = new Agent(name, gameRulebook);
+        agent = new Agent(name);
     }
 
     @After
@@ -42,7 +42,7 @@ public class AgentTest {
 
     @Test
     public void testCurrentHPSetAccurately() throws Exception {
-        assertEquals(agent.getCurrentHP(), gameRulebook.getInitialPlayerMaxHealth());
+        assertEquals(agent.getCurrentHP(), agent.getMaxHP());
     }
 
     @Test
@@ -75,6 +75,6 @@ public class AgentTest {
     @Test
     public void testCurrentHPDoesNotExceedMaxHP(){
         agent.setMaxHP(10);
-        assertTrue(agent.getCurrentHP() < agent.getMaxHP());
+        assertTrue(agent.getCurrentHP() <= agent.getMaxHP());
     }
 }
