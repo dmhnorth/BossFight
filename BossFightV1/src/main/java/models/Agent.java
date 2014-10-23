@@ -10,13 +10,6 @@ public class Agent {
     private int defence;
     private int attack;
 
-
-    public Agent(AgentTypes type) {
-//        TODO
-//        make agent of this type;
-//        create the different cases
-    }
-
     public Agent(String name, GameRulebook gameRulebook) {
         setName(name);
 
@@ -74,6 +67,6 @@ public class Agent {
 
     @Override
     public String toString() {
-        return "Name: " + getName() + " HP:" + getCurrentHP() + "/" + getMaxHP() + " AgentTypes:" + getAttack() + " D:" + getDefence();
+        return "Name: " + getName() + " HP:" + getCurrentHP() + "/" + getMaxHP() + " A:" + getAttack() + " D:" + getDefence();
     }
 }
