@@ -1,6 +1,7 @@
 package consoles.textAdventure;
 
 import consoles.BossFightConsole;
+import consoles.BossFightView;
 import models.Agent;
 import models.AgentManager;
 import rulebooks.BasicRulebook;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 
 public class TextAdventureConsole implements BossFightConsole {
 
-    private TextAdventureView view = new TextAdventureView();
+    private BossFightView view = new TextAdventureView();
     private Scanner scanner = new Scanner(System.in);
     private AgentManager agentManager;
     private GameRulebook gameRulebook;
