@@ -15,6 +15,7 @@ public class TextAdventureConsole implements BossFightConsole {
     private TextAdventureAgentManager textAdventureAgentManager;
     private Rulebook rulebook;
     private AgentFactory agentFactory;
+    private Fight fight;
 
 
     @Override
@@ -28,9 +29,9 @@ public class TextAdventureConsole implements BossFightConsole {
 
 
         textAdventureAgentManager.setAgentPlayer1(agentFactory.getAgentAndSetName(scanner.next(), 1));
-
         System.out.println(textAdventureAgentManager.getAgentPlayer1().toString());
 
+        fight.startFight(textAdventureAgentManager.getAgentPlayer1(), agentFactory.getAgentWithRandomName(1));
 
         //TODO make the rest of the text adventure version here
 
