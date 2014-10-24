@@ -7,9 +7,9 @@ public interface Rulebook {
      */
     void setRules();
 
-    public int getInitialPlayerMaxHealth();
+    public int getMaxHealthViaLevel(int level);
 
-    public int getInitialPlayerAttack();
+    public int getAttackViaLevel(int level);
 
-    public int getInitialPlayerDefence();
+    public int getDefenceViaLevel(int level);
 }

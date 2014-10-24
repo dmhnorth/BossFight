@@ -7,9 +7,11 @@ public class Agent {
     private int maxHP;
     private int defence;
     private int attack;
+    private int level;
 
-    public Agent(String name) {
+    public Agent(String name, int level) {
         setName(name);
+        setLevel(level);
     }
 
     public void restoreHP() {
@@ -59,6 +61,14 @@ public class Agent {
 
     @Override
     public String toString() {
-        return "Name: " + getName() + " HP:" + getCurrentHP() + "/" + getMaxHP() + " A:" + getAttack() + " D:" + getDefence();
+        return "Name: " + getName() + " Level:" + level + " HP:" + getCurrentHP() + "/" + getMaxHP() + " A:" + getAttack() + " D:" + getDefence();
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int getLevel() {
+        return level;
     }
 }

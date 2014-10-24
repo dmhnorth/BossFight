@@ -17,17 +17,18 @@ public class BasicRulebook implements Rulebook {
     }
 
     @Override
-    public int getInitialPlayerMaxHealth() {
-        return initialPlayerMaxHealth;
+    public int getMaxHealthViaLevel(int level) {
+        return initialPlayerMaxHealth * level;
     }
 
     @Override
-    public int getInitialPlayerAttack() {
-        return initialPlayerAttack;
+    public int getAttackViaLevel(int level) {
+        return initialPlayerAttack * level;
     }
 
     @Override
-    public int getInitialPlayerDefence() {
-        return initialPlayerDefence;
+    public int getDefenceViaLevel(int level) {
+        return initialPlayerDefence * level;
     }
+
 }

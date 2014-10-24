@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import rulebooks.BasicRulebook;
 import rulebooks.Rulebook;
+import sun.management.resources.agent;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -18,7 +19,7 @@ public class AgentTest {
     public void setUp() throws Exception {
         name = "Dave";
         rulebook = new BasicRulebook();
-        agent = new Agent(name);
+        agent = new Agent(name, 1);
     }
 
     @After
@@ -70,6 +71,7 @@ public class AgentTest {
     public void testToString() throws Exception {
         //Visual test only
         System.out.println(agent.toString());
+        System.out.println();
     }
 
     @Test
