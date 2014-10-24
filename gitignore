@@ -52,3 +52,28 @@ build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
+
+*.class
+*.xml
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Mac
+.DS_Store
+
+out/
+ObserverExample/
