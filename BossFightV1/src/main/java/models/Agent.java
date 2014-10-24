@@ -59,6 +59,15 @@ public class Agent {
         return attack;
     }
 
+    boolean takeDamage(int damage) {
+        currentHP = currentHP - damage;
+        return isDead();
+    }
+
+    private Boolean isDead() {
+        return currentHP <= 0;
+    }
+
     @Override
     public String toString() {
         return "Name: " + getName() + " Level:" + level + " HP:" + getCurrentHP() + "/" + getMaxHP() + " A:" + getAttack() + " D:" + getDefence();
