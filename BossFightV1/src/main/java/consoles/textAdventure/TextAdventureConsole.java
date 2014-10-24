@@ -28,7 +28,7 @@ public class TextAdventureConsole implements BossFightConsole {
         agentFactory = new AgentFactory(rulebook);
 
 
-        agentManager.setAgentPlayer1(agentFactory.getAgent(scanner.next()));
+        agentManager.setAgentPlayer1(agentFactory.getAgentAndSetName(scanner.next()));
 
         System.out.println(agentManager.getAgentPlayer1().toString());
 

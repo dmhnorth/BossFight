@@ -1,4 +1,4 @@
-package launchers;
+package consoles.textAdventure;
 
 import consoles.interfaces.BossFightConsole;
 import consoles.textAdventure.TextAdventureConsole;
