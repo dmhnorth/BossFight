@@ -1,6 +1,8 @@
-package models;
+package consoles.textAdventure;
 
-public class AgentManager {
+import models.Agent;
+
+public class TextAdventureAgentManager {
 
     private Agent agentPlayer1;
 

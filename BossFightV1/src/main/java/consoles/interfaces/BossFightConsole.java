@@ -1,6 +1,6 @@
 package consoles.interfaces;
 
-import models.AgentManager;
+import consoles.textAdventure.TextAdventureAgentManager;
 import rulebooks.Rulebook;
 
 /**
@@ -12,5 +12,5 @@ public interface BossFightConsole {
 
     void setRulebook(Rulebook rulebook);
 
-    void setAgentManager(AgentManager agentManager);
+    void setTextAdventureAgentManager(TextAdventureAgentManager textAdventureAgentManager);
 }
