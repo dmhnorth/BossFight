@@ -74,6 +74,3 @@ gradle-app.setting
 
 # Mac
 .DS_Store
-
-out/
-ObserverExample/
