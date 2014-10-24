@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7c1108d-a3eb-4352-98b6-a027eff07b68" name="Default" comment="created some lovely methods within agent regarding being attacked, and dying.">
+    <list default="true" id="f7c1108d-a3eb-4352-98b6-a027eff07b68" name="Default" comment="commit prior to trying to fix gitignore problems">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BossFight.iws" />
@@ -1073,7 +1073,8 @@
     <MESSAGE value="rulebook now injected into an agent factory." />
     <MESSAGE value="renamed AgentManager, again." />
     <MESSAGE value="created some lovely methods within agent regarding being attacked, and dying." />
-    <option name="LAST_COMMIT_MESSAGE" value="created some lovely methods within agent regarding being attacked, and dying." />
+    <MESSAGE value="commit prior to trying to fix gitignore problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit prior to trying to fix gitignore problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
