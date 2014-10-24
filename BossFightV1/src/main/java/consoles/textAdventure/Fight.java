@@ -4,7 +4,9 @@ import models.Agent;
 
 public interface Fight {
 
-    void startFight(Agent player, Agent enemy);
-
-
+    /**
+     *
+     * @return the winner
+     */
+    Agent startFight(Agent player, Agent enemy);
 }
