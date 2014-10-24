@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7c1108d-a3eb-4352-98b6-a027eff07b68" name="Default" comment="commit prior to trying to fix gitignore problems">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gitignore" afterPath="$PROJECT_DIR$/gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="f7c1108d-a3eb-4352-98b6-a027eff07b68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BossFight.iws" />
@@ -1005,7 +1003,8 @@
     <MESSAGE value="renamed AgentManager, again." />
     <MESSAGE value="created some lovely methods within agent regarding being attacked, and dying." />
     <MESSAGE value="commit prior to trying to fix gitignore problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit prior to trying to fix gitignore problems" />
+    <MESSAGE value="most gitignore issues now fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="most gitignore issues now fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
