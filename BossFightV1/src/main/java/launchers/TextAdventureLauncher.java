@@ -1,6 +1,6 @@
 package launchers;
 
-import consoles.BossFightConsole;
+import consoles.interfaces.BossFightConsole;
 import consoles.textAdventure.TextAdventureConsole;
 
 public class TextAdventureLauncher {

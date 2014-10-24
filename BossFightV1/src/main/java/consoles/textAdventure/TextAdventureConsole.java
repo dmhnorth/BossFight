@@ -1,7 +1,7 @@
 package consoles.textAdventure;
 
-import consoles.BossFightConsole;
-import consoles.BossFightView;
+import consoles.interfaces.BossFightConsole;
+import consoles.interfaces.BossFightView;
 import factories.AgentFactory;
 import models.AgentManager;
 import rulebooks.BasicRulebook;

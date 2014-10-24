@@ -1,6 +1,6 @@
 package consoles.textAdventure;
 
-import consoles.BossFightView;
+import consoles.interfaces.BossFightView;
 
 /**
  * English language - Text adventure format.

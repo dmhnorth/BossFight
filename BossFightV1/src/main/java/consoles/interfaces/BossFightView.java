@@ -1,4 +1,4 @@
-package consoles;
+package consoles.interfaces;
 
 public interface BossFightView {
 

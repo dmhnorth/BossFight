@@ -1,4 +1,4 @@
-package consoles;
+package consoles.interfaces;
 
 import models.AgentManager;
 import rulebooks.Rulebook;
