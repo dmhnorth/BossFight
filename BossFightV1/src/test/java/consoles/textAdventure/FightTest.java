@@ -25,11 +25,6 @@ public class FightTest {
         fight = new Fight();
     }
 
-    @After
-    public void tearDown() throws Exception {
-
-    }
-
     @Test
     public void testStartFight() throws Exception {
         Agent result = fight.startFight(p1, p2);
