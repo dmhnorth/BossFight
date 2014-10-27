@@ -26,7 +26,7 @@ public class Agent {
         return name;
     }
 
-    int getCurrentHP() {
+    public int getCurrentHP() {
         return currentHP;
     }
 
@@ -39,7 +39,7 @@ public class Agent {
         }
     }
 
-    int getMaxHP() {
+    public int getMaxHP() {
         return maxHP;
     }
 
@@ -47,7 +47,7 @@ public class Agent {
         this.defence = defence;
     }
 
-    int getDefence() {
+    public int getDefence() {
         return defence;
     }
 
@@ -55,16 +55,16 @@ public class Agent {
         this.attack = attack;
     }
 
-    int getAttack() {
+    public int getAttack() {
         return attack;
     }
 
-    boolean takeDamage(int damage) {
+    public boolean takeDamage(int damage) {
         currentHP = currentHP - damage;
         return isDead();
     }
 
-    private Boolean isDead() {
+    public Boolean isDead() {
         return currentHP <= 0;
     }
 

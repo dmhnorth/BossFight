@@ -15,7 +15,7 @@ public class AgentFactory {
         this.rulebook = rulebook;
     }
 
-    public Agent getAgentAndSetName(String name, int level) {
+    public Agent getAgentAndSetNameAndLevel(String name, int level) {
         Agent agent = new Agent(name, level);
 
         agent.setMaxHP(rulebook.getMaxHealthViaLevel(level));
