@@ -23,4 +23,10 @@ public class Arena {
 
         return startOneVsOneFight(defender, attacker);
         }
+
+    public void startOneVsManyFight(Agent attacker, Agent[] enemies) {
+        for (Agent x : enemies){
+            startOneVsOneFight(attacker, x);
+        }
+    }
 }
