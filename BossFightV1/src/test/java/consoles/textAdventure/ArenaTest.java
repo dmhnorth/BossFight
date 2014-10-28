@@ -46,9 +46,7 @@ public class ArenaTest {
         Agent enemies[] = new Agent[]{p2, p3};
 
         arena.startOneVsManyFight(p1, enemies);
-        assertTrue(p1.isDead());
-        assertTrue(p2.isDead());
-        assertTrue(!p3.isDead());
+        assertTrue(p1.isDead() && p2.isDead() && !p3.isDead());
     }
 }
 
