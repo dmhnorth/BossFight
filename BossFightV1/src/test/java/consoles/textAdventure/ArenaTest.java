@@ -17,6 +17,7 @@ public class ArenaTest {
     Agent p3;
     Arena arena;
 
+
     @Before
     public void setUp() throws Exception {
         Rulebook rulebook = new BasicRulebook();
@@ -48,6 +49,8 @@ public class ArenaTest {
         arena.startOneVsManyFight(p1, enemies);
         assertTrue(p1.isDead() && p2.isDead() && !p3.isDead());
     }
+
+
 }
 
 
