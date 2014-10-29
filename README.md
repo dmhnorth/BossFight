@@ -4,8 +4,8 @@ BossFight
 A points based gaming system.
 
 Created as an ongoing personal project post-university to explore Java, design patterns,
-and attempt to utilise the concepts of 'Clean Code' along with anything else I
-come across whilst reading and researching.
+and attempt to utilise and refresh the concepts I
+come across whilst reading and researching, such as design patterns.
 
 Changes made due to study are referenced in the commit comments. 
 Eg. cc is a reference to a change made due to 'Clean Code'.
