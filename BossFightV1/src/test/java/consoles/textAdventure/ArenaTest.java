@@ -42,11 +42,11 @@ public class ArenaTest {
     }
 
     @Test
-    public void testOneVsTwoFight(){
+    public void testOneVsTwoInSuccessionFight(){
 
         Agent enemies[] = new Agent[]{p2, p3};
 
-        arena.startOneVsManyFight(p1, enemies);
+        arena.startOneVsManyInSuccessionFight(p1, enemies);
         assertTrue(p1.isDead() && p2.isDead() && !p3.isDead());
     }
 

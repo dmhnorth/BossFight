@@ -45,7 +45,7 @@ public class Arena {
     }
 
 
-    public void startOneVsManyFight(Agent attacker, Agent[] enemies) {
+    public void startOneVsManyInSuccessionFight(Agent attacker, Agent[] enemies) {
         for (Agent x : enemies){
             startOneVsOneFight(attacker, x);
         }
