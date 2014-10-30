@@ -1,10 +1,9 @@
 package factories;
 
 import generators.NameGenerator;
+import generators.NameGeneratorSimple;
 import models.Agent;
 import rulebooks.Rulebook;
-
-import java.util.logging.Level;
 
 public class AgentFactory {
 
@@ -13,6 +12,7 @@ public class AgentFactory {
 
     public AgentFactory(Rulebook rulebook){
         this.rulebook = rulebook;
+        this.nameGenerator = new NameGeneratorSimple();
     }
 
     public Agent getAgentAndSetNameAndLevel(String name, int level) {

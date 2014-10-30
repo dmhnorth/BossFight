@@ -32,6 +32,7 @@ public class TextAdventureConsole implements BossFightConsole {
         System.out.println(textAdventureAgentManager.getAgentPlayer1().toString());
 
         arena.startOneVsOneFight(textAdventureAgentManager.getAgentPlayer1(), agentFactory.getAgentWithRandomName(1));
+//        arena.startOneVsOneFight(agentFactory.getAgentWithRandomName(1), agentFactory.getAgentWithRandomName(1));
 
         //TODO make the rest of the text adventure version here
 
