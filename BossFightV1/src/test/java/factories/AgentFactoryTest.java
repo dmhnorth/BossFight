@@ -24,7 +24,6 @@ public class AgentFactoryTest {
     public void testGetAgentAndSetNameAndLevel() throws Exception {
         String name = "Dave";
         Agent agent = agentFactory.getAgentAndSetNameAndLevel(name, 1);
-        System.out.println(agent.toString());
         assertEquals(agent.getName(), name);
 
     }
@@ -32,7 +31,6 @@ public class AgentFactoryTest {
     @Test
     public void testGetAgentWithRandomName() throws Exception {
         Agent agent = agentFactory.getAgentWithRandomName(1);
-        System.out.println(agent.toString());
         assertNotNull(agent);
     }
 }

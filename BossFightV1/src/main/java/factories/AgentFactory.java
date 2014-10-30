@@ -24,6 +24,7 @@ public class AgentFactory {
 
         agent.restoreHP();
 
+        System.out.println("Generated: " + agent);
         return agent;
     }
 
@@ -37,6 +38,7 @@ public class AgentFactory {
 
         agent.restoreHP();
 
+        System.out.println("Generated: " + agent);
         return agent;
     }
 }
