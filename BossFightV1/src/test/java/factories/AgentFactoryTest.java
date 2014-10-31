@@ -15,7 +15,7 @@ public class AgentFactoryTest {
     @Before
     public void setUp() throws Exception {
         Rulebook rulebook = new BasicRulebook();
-        agentFactory = new AgentFactory(rulebook);
+        agentFactory = new AgentFactoryBasic(rulebook);
 
 
     }
