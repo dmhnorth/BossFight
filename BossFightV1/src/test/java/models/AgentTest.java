@@ -3,7 +3,6 @@ package models;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import rulebooks.BasicRulebook;
 import rulebooks.Rulebook;
 
 import static org.junit.Assert.assertEquals;
@@ -17,7 +16,7 @@ public class AgentTest {
     @Before
     public void setUp() throws Exception {
         name = "Dave";
-        rulebook = new BasicRulebook();
+        rulebook = new Rulebook();
         agent = new Agent(name, 1);
     }
 

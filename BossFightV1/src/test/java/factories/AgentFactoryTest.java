@@ -3,7 +3,6 @@ package factories;
 import models.Agent;
 import org.junit.Before;
 import org.junit.Test;
-import rulebooks.BasicRulebook;
 import rulebooks.Rulebook;
 
 import static org.junit.Assert.assertEquals;
@@ -14,8 +13,8 @@ public class AgentFactoryTest {
 
     @Before
     public void setUp() throws Exception {
-        Rulebook rulebook = new BasicRulebook();
-        agentFactory = new AgentFactoryBasic(rulebook);
+        Rulebook rulebook = new Rulebook();
+        agentFactory = new AgentFactory(rulebook);
 
 
     }

@@ -1,11 +1,9 @@
 package consoles.textAdventure;
 
 import factories.AgentFactory;
-import factories.AgentFactoryBasic;
 import models.Agent;
 import org.junit.Before;
 import org.junit.Test;
-import rulebooks.BasicRulebook;
 import rulebooks.Rulebook;
 
 import static org.junit.Assert.assertEquals;
@@ -21,8 +19,8 @@ public class ArenaTest {
 
     @Before
     public void setUp() throws Exception {
-        Rulebook rulebook = new BasicRulebook();
-        AgentFactory agentFactory = new AgentFactoryBasic(rulebook);
+        Rulebook rulebook = new Rulebook();
+        AgentFactory agentFactory = new AgentFactory(rulebook);
         p1 = agentFactory.getAgentAndSetNameAndLevel("p1", 1);
         p2 = agentFactory.getAgentAndSetNameAndLevel("p2", 1);
         p3 = agentFactory.getAgentAndSetNameAndLevel("p3", 1);

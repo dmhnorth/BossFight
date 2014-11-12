@@ -3,8 +3,6 @@ package consoles.textAdventure;
 import consoles.interfaces.BossFightConsole;
 import consoles.interfaces.BossFightView;
 import factories.AgentFactory;
-import factories.AgentFactoryBasic;
-import rulebooks.BasicRulebook;
 import rulebooks.Rulebook;
 
 import java.util.Scanner;
@@ -25,8 +23,8 @@ public class TextAdventureConsole implements BossFightConsole {
         view.introduction();
 
         setTextAdventureAgentManager(new TextAdventureAgentManager());
-        setRulebook(new BasicRulebook());
-        agentFactory = new AgentFactoryBasic(rulebook);
+        setRulebook(new Rulebook());
+        agentFactory = new AgentFactory(rulebook);
 
 
         textAdventureAgentManager.setAgentPlayer1(agentFactory.getAgentAndSetNameAndLevel(scanner.next(), 1));
