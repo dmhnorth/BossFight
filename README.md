@@ -1,6 +1,8 @@
 BossFight
 =========
 
+NOTE (NOV 14): project currently on hold whilst redefining the specifications and a clear outline goal.
+
 A points based gaming system.
 
 Created as an ongoing personal project post-university to explore Java, design patterns,
